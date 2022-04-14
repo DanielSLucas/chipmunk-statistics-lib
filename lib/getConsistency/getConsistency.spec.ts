@@ -1,7 +1,7 @@
 import getConsistency from "./getConsistency";
 
 describe('Get consistency function', ()=> {
-  it('Should return de consistency array, the total consistency end the calculations needed to reach that results.', () => {
+  it('Should return de consistency array, the total consistency and the calculations needed to reach that results.', () => {
     const arr =[
       [1, 2, 3],
       [4, 5, 6],
