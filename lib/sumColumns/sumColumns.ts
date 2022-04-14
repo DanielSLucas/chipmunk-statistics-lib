@@ -1,4 +1,4 @@
-interface SumColumnsReturn {
+export interface SumColumnsReturn {
   sums: number[];
   calc: string;
 }

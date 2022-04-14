@@ -1,4 +1,4 @@
-interface PriorityByItemReturn {
+export interface PriorityByItemReturn {
   priorities: number[];
   calc: string;
 }
