@@ -1,10 +1,10 @@
 import { createTable, getFinalPriorities } from "../index";
-import { PonderationResults, Step } from "../ponderation/ponderation";
+import { PonderationResults, Record } from "../ponderation/ponderation";
 import { SerializedItem } from "../serializeData/serializeData";
 
 export interface DecisionResult {
   bestDecision: SerializedItem;
-  record: Step;
+  record: Record;
 }
 
 /**
@@ -43,7 +43,7 @@ function decide(attributesInfo: PonderationResults[], ponderationInfo: Ponderati
     ['P', ...ponderationPriorities, '']
   );
 
-  const record: Step = {
+  const record: Record = {
     title: 'Decisão',
     table,
     calcs: [

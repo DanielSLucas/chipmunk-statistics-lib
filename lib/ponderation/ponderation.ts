@@ -8,7 +8,7 @@ import {
   sumColumns 
 } from "../index";
 
-export interface Step {
+export interface Record {
   title: string;
   table: (string | number)[][];
   calcs: string[];
@@ -24,7 +24,7 @@ export interface PonderationResults {
   ci: number;
   cr: number;
   isConsistent: boolean;
-  record: Step;
+  record: Record;
 }
 
 /**
