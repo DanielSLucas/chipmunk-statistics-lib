@@ -1,3 +1,4 @@
+import ahp from "./ahp/ahp"
 import createComparisonTable from "./createComparisonTable/createComparisonTable"
 import createTable from "./createTable/createTable"
 import decide from "./decide/decide"
@@ -15,6 +16,7 @@ import sumColumns from "./sumColumns/sumColumns"
 
 
 export {
+  ahp,
   createComparisonTable,
   createTable,
   decide,
