@@ -1,5 +1,5 @@
-import { decide, getAttributesInfo, ponderation, serializeData } from "..";
-import { Attribute, Record } from "../types";
+import { decide, getAttributesInfo, ponderation, serializeData } from "./functions";
+import { Attribute, Record } from "./functions/types";
 
 export interface HumanInput {
   attributesPrioritiesTable: number[][],
