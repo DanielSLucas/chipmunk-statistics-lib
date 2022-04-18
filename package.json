@@ -1,5 +1,12 @@
 {
   "name": "statistics-lib",
+  "author": {
+    "name": "Daniel Lucas Santos",
+    "email": "daniellucas-pms@hotmail.com"    
+  },
+  "repository": {
+    "url": "https://github.com/DanielSLucas/statistics-lib"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
