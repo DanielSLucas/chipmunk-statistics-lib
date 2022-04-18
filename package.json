@@ -1,14 +1,16 @@
 {
   "name": "chipmunk-statistics-lib",
+  "description": "Statistics methods used in chipmunk app",
   "author": {
     "name": "Daniel Lucas Santos",
     "email": "daniellucas-pms@hotmail.com"    
   },
   "repository": {
+    "type": "git",
     "url": "https://github.com/DanielSLucas/statistics-lib"
   },
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./lib/index.ts",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.4.1",
