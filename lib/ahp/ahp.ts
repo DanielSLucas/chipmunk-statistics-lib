@@ -1,13 +1,12 @@
 import { decide, getAttributesInfo, ponderation, serializeData } from "..";
-import { Attribute } from "../getAttributesInfo/getAttributesInfo";
-import { Record } from "../ponderation/ponderation";
+import { Attribute, Record } from "../types";
 
 export interface HumanInput {
   attributesPrioritiesTable: number[][],
   attributes: Attribute[];
 }
 
-export interface AhpResult {
+interface AhpResult {
   decision: Object;
   records: Record[];
 }

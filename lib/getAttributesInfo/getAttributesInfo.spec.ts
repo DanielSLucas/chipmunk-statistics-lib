@@ -1,6 +1,5 @@
-import { PonderationResults } from "../ponderation/ponderation";
-import { SerializedData } from "../serializeData/serializeData";
-import getAttributesInfo, { Attribute } from "./getAttributesInfo";
+import { SerializedData, Attribute } from "../types";
+import getAttributesInfo from "./getAttributesInfo";
 
 describe("Get attributes info", () => {
   it("Should return the ponderation for each attribute in the items", () => {

@@ -1,15 +1,4 @@
-export interface AttributesValues {
-  [key: string]: (number | string)[];
-}
-
-export interface SerializedItem {
-  [key: string]: number | string;
-}
-
-export interface SerializedData {
-  attributesValues: AttributesValues;
-  serializedItems: SerializedItem[];
-}
+import { AttributesValues, SerializedData, SerializedItem } from "../types";
 
 /**
  * Object containing the serialized data from a table.

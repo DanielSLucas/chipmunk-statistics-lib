@@ -1,3 +1,4 @@
+import { PonderationResults } from "../types";
 import { 
   createTable, 
   getConsistency, 
@@ -7,25 +8,6 @@ import {
   priorityByItem, 
   sumColumns 
 } from "../index";
-
-export interface Record {
-  title: string;
-  table: (string | number)[][];
-  calcs: string[];
-}
-
-export interface PonderationResults {
-  comparisonTable: number[][];
-  sums: number[];
-  priorities: number[];
-  lambdaMax: number;
-  consistency: number[];
-  totalConsistency: number;
-  ci: number;
-  cr: number;
-  isConsistent: boolean;
-  record: Record;
-}
 
 /**
  * Object with all the properties returned from ponderation function.
@@ -49,7 +31,7 @@ export interface PonderationResults {
  * @param {string} title - The title for this calculations record
  * @returns {PonderationResults} Object with all the properties returned from ponderation function.
  */
- function ponderation (comparisonTable: number[][], labels: string[], title: string):PonderationResults {
+ function ponderation (comparisonTable: number[][], labels: string[], title: string): PonderationResults {
   const totalNumOfAttributes = comparisonTable[0].length; 
 
   const { sums, calc: sumCalc } = sumColumns(comparisonTable);

@@ -1,11 +1,5 @@
 import { createComparisonTable, ponderation } from "../index";
-import { PonderationResults } from "../ponderation/ponderation";
-import { SerializedData } from "../serializeData/serializeData";
-
-export interface Attribute {
-  name: string;
-  betterWhen: 'greater' | 'lesser';
-}
+import { Attribute, SerializedData, PonderationResults } from "../types";
 
 /**
  * Object containing attribute info

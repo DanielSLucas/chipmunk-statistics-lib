@@ -1,4 +1,4 @@
-export interface GetConsistencyIndexReturn {
+interface GetConsistencyIndexReturn {
   ci: number;
   calc: string;
 }
@@ -16,7 +16,7 @@ export interface GetConsistencyIndexReturn {
  * @param {number} totalNumOfAttributes - Number of attributes
  * @returns {GetConsistencyIndexReturn}
  */
-function getConsistencyIndex(lambdaMax: number, totalNumOfAttributes: number) {
+function getConsistencyIndex(lambdaMax: number, totalNumOfAttributes: number): GetConsistencyIndexReturn {
   const ci = (lambdaMax - totalNumOfAttributes)/ (totalNumOfAttributes-1);
   
   const calc=`$CI=frac{${lambdaMax.toFixed(2)}-${totalNumOfAttributes.toFixed(2)}}{${(totalNumOfAttributes-1).toFixed(2)}}=${ci.toFixed(2)}$`;

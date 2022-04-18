@@ -1,4 +1,4 @@
-export interface GetFinalPrioritiesReturn {
+interface GetFinalPrioritiesReturn {
   finalPriorities: number[];
   calc: string;
 }

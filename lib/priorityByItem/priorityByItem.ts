@@ -1,4 +1,4 @@
-export interface PriorityByItemReturn {
+interface PriorityByItemReturn {
   priorities: number[];
   calc: string;
 }
@@ -16,7 +16,7 @@ export interface PriorityByItemReturn {
  * @param {number[]} sums - Array with the sum of each column values. 
  * @returns {PriorityByItemReturn}
  */
- function priorityByItem(arr: number[][], sums: number[]):PriorityByItemReturn {
+ function priorityByItem(arr: number[][], sums: number[]): PriorityByItemReturn {
   let calc = '$';
 
   const priorities = arr.map((row) => {

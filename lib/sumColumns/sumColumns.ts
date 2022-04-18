@@ -1,4 +1,4 @@
-export interface SumColumnsReturn {
+interface SumColumnsReturn {
   sums: number[];
   calc: string;
 }
@@ -21,7 +21,7 @@ function sumColumns(arr: number[][]): SumColumnsReturn {
   const sums =  arr.map((row, i) => {
     let sum = 0;
     
-    row.forEach((item, j) => {
+    row.forEach((_, j) => {
       calc+= `${j===0?'':'+'}${arr[j][i].toFixed(2)}`
       sum += arr[j][i];
     });

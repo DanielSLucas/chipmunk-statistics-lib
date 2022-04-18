@@ -1,8 +1,7 @@
 import { createTable, getFinalPriorities } from "../index";
-import { PonderationResults, Record } from "../ponderation/ponderation";
-import { SerializedItem } from "../serializeData/serializeData";
+import { PonderationResults, Record, SerializedItem } from '../types';
 
-export interface DecisionResult {
+interface DecisionResult {
   bestDecision: SerializedItem;
   record: Record;
 }

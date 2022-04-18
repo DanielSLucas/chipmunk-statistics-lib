@@ -1,4 +1,4 @@
-export interface GetConsistencyRatioReturn {
+interface GetConsistencyRatioReturn {
   cr: number;
   calc: string;
 }

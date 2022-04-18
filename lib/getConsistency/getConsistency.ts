@@ -1,4 +1,4 @@
-export interface GetConsistencyReturn {
+interface GetConsistencyReturn {
   consistency: number[];
   totalConsistency: number;
   calc: string;

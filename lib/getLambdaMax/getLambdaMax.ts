@@ -1,4 +1,4 @@
-export interface GetLambdaMaxReturn {
+interface GetLambdaMaxReturn {
   lambdaMax: number;
   calc: string;
 }

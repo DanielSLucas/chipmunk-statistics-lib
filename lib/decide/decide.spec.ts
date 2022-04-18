@@ -1,6 +1,6 @@
-import getAttributesInfo, { Attribute } from "../getAttributesInfo/getAttributesInfo";
+import getAttributesInfo from "../getAttributesInfo/getAttributesInfo";
 import ponderation from "../ponderation/ponderation";
-import { SerializedData } from "../serializeData/serializeData";
+import { SerializedData, Attribute } from "../types";
 import decide from "./decide";
 
 describe("Decide function", () => {
