@@ -1,7 +1,7 @@
 /**
  * Sum the values of the array
  * @param {any[]} arr - Uni or multidimensional array
- * @returns {number} The number of elements
+ * @returns {number} The sum result
  */
 function sumValues(arr: Array<any>): number {
   let total = 0;
