@@ -12,7 +12,8 @@ function sumValues(arr: Array<any>): number {
       continue;
     }
 
-    if(arr[i]) {
+    // sum only if it is a number
+    if(!Number.isNaN(arr[i])) {
       total += arr[i];
     }    
   }
