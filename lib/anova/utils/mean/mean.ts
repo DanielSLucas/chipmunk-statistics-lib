@@ -22,8 +22,8 @@ function mean(values: Array<any>): MeanReturn {
 
   let { sum, calc: sumCalc } = sumValues(values);  
 
-  const calc = `$frac{${getCalcWithoutResult(sumCalc)}}{${numberOfValues}}$`;
   const mean = sum/numberOfValues;
+  const calc = `$frac{${getCalcWithoutResult(sumCalc)}}{${numberOfValues}}=${mean.toFixed(2)}$`;
 
   return { mean, calc };
 }
