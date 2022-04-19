@@ -1,3 +1,5 @@
+import { getCalcWithoutResult } from "../index";
+
 interface SumValuesReturn {
   sum: number;
   calc: string;
@@ -26,7 +28,7 @@ function sumValues(arr: Array<any>): SumValuesReturn {
       currCalc = currCalc.replace(/\$|=\d+/g, '');
       
       sum += currSum;
-      calc += `${calc === '$' ? '' : '+'}${currCalc}`;
+      calc += `${calc === '$' ? '' : '+'}${getCalcWithoutResult(currCalc)}`;
  
       continue;
     }

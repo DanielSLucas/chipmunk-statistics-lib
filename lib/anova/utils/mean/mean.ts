@@ -1,4 +1,4 @@
-import { countNotNullElements, sumValues } from "..";
+import { countNotNullElements, sumValues, getCalcWithoutResult } from "../index";
 
 interface MeanReturn {
   mean: number;
@@ -20,11 +20,9 @@ interface MeanReturn {
 function mean(values: Array<any>): MeanReturn {
   const numberOfValues = countNotNullElements(values);
 
-  let { sum, calc: sumCalc } = sumValues(values);
+  let { sum, calc: sumCalc } = sumValues(values);  
 
-  sumCalc = sumCalc.replace(/\$|=\d+/g, '');
-
-  const calc = `$frac{${sumCalc}}{${numberOfValues}}$`;
+  const calc = `$frac{${getCalcWithoutResult(sumCalc)}}{${numberOfValues}}$`;
   const mean = sum/numberOfValues;
 
   return { mean, calc };
