@@ -12,7 +12,7 @@ import { Attribute, SerializedData, PonderationResults } from "../types";
  * Get the ponderation for each attribute informed
  * @param {SerializedData} data - Array containing the table data to be serialized.
  * @param {Attribute[]} attributes - Array containing attributes info
- * @returns {(Attribute & PonderationResults)[]} An array with de ponderation info for each attribute informed.
+ * @returns {(Attribute & PonderationResults)[]} An array with the ponderation info for each attribute informed.
  */
  function getAttributesInfo(data: SerializedData, attributes: Attribute[]): (Attribute & PonderationResults)[] {      
   return attributes.map(atrb => {        

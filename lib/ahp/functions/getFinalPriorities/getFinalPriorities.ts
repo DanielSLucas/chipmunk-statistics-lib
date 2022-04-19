@@ -11,7 +11,7 @@ interface GetFinalPrioritiesReturn {
  */
 
 /**
- * Calculates the final priority based on de other priorities
+ * Calculates the final priority based on the other priorities
  * @param {number[][]} attributesPriorities - The options priorities for each attribute. 
  * @param {number[]} ponderationPriorities - The attributes priorities. 
  * @returns {GetFinalPrioritiesReturn}

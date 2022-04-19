@@ -11,7 +11,7 @@ interface GetConsistencyRatioReturn {
  */
 
 /**
- * Calculates de Consistency ratio.
+ * Calculates the Consistency ratio.
  * @param {number} ci - Consistency index value
  * @param {number} totalNumOfAttributes - Number of attributes
  * @returns {GetConsistencyRatioReturn}

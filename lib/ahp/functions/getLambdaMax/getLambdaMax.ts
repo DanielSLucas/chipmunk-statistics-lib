@@ -11,7 +11,7 @@ interface GetLambdaMaxReturn {
  */
 
 /**
- * Calculates de lamba máx.
+ * Calculates the lamba máx.
  * @param {number} totalConsistency - Total consistency value
  * @param {number} totalNumOfAttributes - Number of attributes
  * @returns {GetLambdaMaxReturn}

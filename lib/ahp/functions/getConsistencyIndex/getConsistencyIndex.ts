@@ -11,7 +11,7 @@ interface GetConsistencyIndexReturn {
  */
 
 /**
- * Calculates de Consistency index.
+ * Calculates the Consistency index.
  * @param {number} lambdaMax - Lamba máx value
  * @param {number} totalNumOfAttributes - Number of attributes
  * @returns {GetConsistencyIndexReturn}
