@@ -26,9 +26,7 @@ describe("AHP function", () => {
       ],
     };
 
-    const result = ahp(data, humanInput);
-    
-    console.log(result);
+    const result = ahp(data, humanInput);      
 
     expect(result).toHaveProperty('decision');
     expect(result).toHaveProperty('decisionPriority');
@@ -38,6 +36,6 @@ describe("AHP function", () => {
       custo: 7,
       prazoDeEntrega: 5,
     });
-    // expect(result.decisionPriority).toEqual()
+    expect(result.decisionPriority).toEqual(57.67);
   });
 });
