@@ -3,6 +3,7 @@ import { PonderationResults, Record, SerializedItem } from '../types';
 
 interface DecisionResult {
   bestDecision: SerializedItem;
+  bestDecisionPriority: number;
   record: Record;
 }
 
@@ -10,6 +11,7 @@ interface DecisionResult {
  * Object with all the properties returned from the decide function.
  * @typedef {Object} DecisionResult
  * @property {Object} bestDecision - The object containing the data of the best decision
+ * @property {number} bestDecisionPriority - The percentage of priority
  * @property {Object} record - The record of what was made in this function.
  */
 
@@ -52,6 +54,7 @@ function decide(attributesInfo: PonderationResults[], ponderationInfo: Ponderati
 
   return {
     bestDecision: serializedItems[decisionIndex],
+    bestDecisionPriority: Number((finalPriorities[decisionIndex] * 100).toFixed(2)),
     record,
   };
 }

@@ -8,6 +8,7 @@ export interface HumanInput {
 
 interface AhpResult {
   decision: Object;
+  decisionPriority: number;
   records: Record[];
 }
 
@@ -37,6 +38,7 @@ function ahp(data: (string | number)[][], humanInput: HumanInput): AhpResult {
   
   return {
     decision: decision.bestDecision,
+    decisionPriority: decision.bestDecisionPriority,
     records: [
       ponderationInfo.record,
       ...attributesInfo.map(info => info.record),

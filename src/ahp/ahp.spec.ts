@@ -28,12 +28,16 @@ describe("AHP function", () => {
 
     const result = ahp(data, humanInput);
     
+    console.log(result);
+
     expect(result).toHaveProperty('decision');
+    expect(result).toHaveProperty('decisionPriority');
     expect(result).toHaveProperty('records');
     expect(result.decision).toEqual({
       name: "opt3",
       custo: 7,
       prazoDeEntrega: 5,
     });
+    // expect(result.decisionPriority).toEqual()
   });
 });

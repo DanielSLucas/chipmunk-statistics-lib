@@ -55,13 +55,15 @@ describe("Decide function", () => {
     const attributesInfo = getAttributesInfo(serializeData,attributes);
 
     const result = decide(attributesInfo, ponderationInfo, serializeData.serializedItems);
-
+  
     expect(result).toHaveProperty('bestDecision');
+    expect(result).toHaveProperty('bestDecisionPriority');
     expect(result).toHaveProperty('record');
     expect(result.bestDecision).toEqual({
       name: "opt3",
       custo: 7,
       prazoDeEntrega: 5,
     });
+    expect(result.bestDecisionPriority).toEqual(57.67);
   });
 });
