@@ -5,6 +5,7 @@ export interface HumanInput {
 }
 interface AhpResult {
     decision: Object;
+    decisionPriority: number;
     records: Record[];
 }
 /**
