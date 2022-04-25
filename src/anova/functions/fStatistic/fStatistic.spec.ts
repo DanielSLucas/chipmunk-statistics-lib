@@ -10,7 +10,7 @@ describe("F statistic function", () => {
     expect(result.record).toEqual({
       title: "Estatística F",
       calcs: [
-        `$F=frac{7}{2}=3.5$`,
+        `$F=frac{7.00}{2.00}=3.50$`,
       ],
     })
   });

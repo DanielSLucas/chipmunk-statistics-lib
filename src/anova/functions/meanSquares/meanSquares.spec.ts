@@ -24,8 +24,8 @@ describe("Mean squares function", () => {
     expect(result.record).toEqual({
       title: "Quadrado médio",
       calcs: [
-        "$QME=frac{10}{2}=5$",
-        "$QMD=frac{5}{5}=1$"
+        "$QME=frac{10.00}{2.00}=5.00$",
+        "$QMD=frac{5.00}{5.00}=1.00$"
       ],
     });
   });

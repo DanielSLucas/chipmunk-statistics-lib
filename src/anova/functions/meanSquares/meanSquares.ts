@@ -38,8 +38,8 @@ function meanSquares(squaresSums: SumOfSquares, freedomDegrees: DegreesOfFreedom
   const record = {
     title: "Quadrado médio",
     calcs: [
-      `$QME=frac{${squaresSums.between}}{${freedomDegrees.between}}=${between}$`,
-      `$QMD=frac{${squaresSums.within}}{${freedomDegrees.within}}=${within}$`,
+      `$QME=frac{${squaresSums.between.toFixed(2)}}{${freedomDegrees.between.toFixed(2)}}=${between.toFixed(2)}$`,
+      `$QMD=frac{${squaresSums.within.toFixed(2)}}{${freedomDegrees.within.toFixed(2)}}=${within.toFixed(2)}$`,
     ]
   }
 

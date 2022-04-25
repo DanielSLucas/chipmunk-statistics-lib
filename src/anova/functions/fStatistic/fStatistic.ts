@@ -19,7 +19,7 @@ function fStatistic(meanSquareBetween: number, meanSquareWithin: number): FStati
     record: {
       title: "Estatística F",
       calcs: [
-        `$F=frac{${meanSquareBetween}}{${meanSquareWithin}}=${fStatistic}$`,
+        `$F=frac{${meanSquareBetween.toFixed(2)}}{${meanSquareWithin.toFixed(2)}}=${fStatistic.toFixed(2)}$`,
       ],
     },
   };

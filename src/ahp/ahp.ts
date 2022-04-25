@@ -30,7 +30,7 @@ function ahp(data: (string | number)[][], humanInput: HumanInput): AhpResult {
 
   const serializedData = serializeData(data);  
   
-  const ponderationInfo = ponderation(humanInput.attributesPrioritiesTable, humanInput.attributes.map(attr => attr.name), 'ponderacao');  
+  const ponderationInfo = ponderation(humanInput.attributesPrioritiesTable, humanInput.attributes.map(attr => attr.name), 'Ponderação');  
 
   const attributesInfo = getAttributesInfo(serializedData, humanInput.attributes);
   
