@@ -27,14 +27,14 @@ interface SumOfSquaresReturn {
   let ssb = 0;
   let ssw = 0;
 
-  let meansCalcs = [`$média geral=$${overallMeanCalc}`];
+  let meansCalcs = [`média geral$=$${overallMeanCalc}`];
   let sswCalcs = '$SSD=';
   let ssbCalcs = '$SSE=';
 
   samples.forEach((sample, i) => {
     const { mean: sampleMean, calc: sampleMeanCalc } = mean(sample);
     meansCalcs.push(
-      `$média amostras #${i+1}=$${sampleMeanCalc}`
+      `média amostras #${i+1}$=$${sampleMeanCalc}`
     );
 
     const diffToOverallMean = sampleMean - overallMean;
@@ -54,7 +54,7 @@ interface SumOfSquaresReturn {
   ssbCalcs += `=${ssb.toFixed(2)}$`;
 
   const sst = ssw + ssb;
-  const sstCalc = `$total=${ssw.toFixed(2)}+${ssb.toFixed(2)}=${sst.toFixed(2)}$`  
+  const sstCalc = `total$=${ssw.toFixed(2)}+${ssb.toFixed(2)}=${sst.toFixed(2)}$`  
 
   const record = {
     title: "Soma de quadrados",    
