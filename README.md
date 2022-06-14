@@ -1,4 +1,4 @@
-# Statistics-lib
+# Chipmunk-statistics-lib
 
 Métodos estatísticos utilizados no site https://chipmunk-beta.vercel.app.
 
